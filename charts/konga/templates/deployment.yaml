@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: develop
   name: {{ include "konga.fullname" . }}
   labels:
     app.kubernetes.io/name: {{ include "konga.name" . }}

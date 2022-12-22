@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
+  namespace: develop
   name:  {{ include "konga.fullname" . }}-config
   labels:
     app.kubernetes.io/name: {{ include "konga.name" . }}
